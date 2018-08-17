@@ -1,0 +1,17 @@
+{
+    "editor.codeLens": false,
+    "vim.enableNeovim": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.minimap.enabled": false,
+    "csharp.format.enable": false,
+    "window.zoomLevel": 0,
+    "editor.formatOnType": false,
+    "javascript.format.enable": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.renderWhitespace": "none",
+    "python.pythonPath": "/Users/micke/.pyenv/versions/3.4.7/bin/python",
+    "files.defaultLanguage": "markdown",
+    "files.associations": {
+        "*.tidal": "haskell"
+    }
+}
