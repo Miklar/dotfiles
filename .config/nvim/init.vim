@@ -56,3 +56,7 @@ let NERDTreeShowHidden = 1
 nmap <silent> <Leader>n :NERDTreeToggle<CR>
 
 set mouse=a
+
+" Open splits 
+set splitbelow
+set splitright
