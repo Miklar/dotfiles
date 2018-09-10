@@ -2,7 +2,6 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'morhetz/gruvbox'
 	Plug 'ctrlpvim/ctrlp.vim'
 	Plug 'scrooloose/nerdtree'
-	Plug 'Lokaltog/powerline'
         Plug 'posva/vim-vue'
 call plug#end()
 
