@@ -53,7 +53,7 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 sudo systemsetup -setrestartfreeze on
 
 # go into computer sleep mode after 20min
-sudo systemsetup -setcomputersleep 20
+#sudo systemsetup -setcomputersleep 20
 
 
 # Check for software updates daily, not just once per week
@@ -80,7 +80,7 @@ defaults write com.apple.touchbar.agent PresentationModeGlobal fullControlStrip
 ###############################################################################
 
 # Disable local Time Machine snapshots
-sudo tmutil disablelocal
+#sudo tmutil disablelocal
 
 # Disable hibernation (speeds up entering sleep mode)
 sudo pmset -a hibernatemode 0
