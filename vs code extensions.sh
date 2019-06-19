@@ -1,3 +1,5 @@
+#!/bin/sh
+
 code --install-extension christian-kohler.path-intellisense
 code --install-extension cjhowe7.laravel-blade
 code --install-extension DavidAnson.vscode-markdownlint
