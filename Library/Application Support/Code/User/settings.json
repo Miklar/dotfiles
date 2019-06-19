@@ -1,10 +1,9 @@
 {
     "editor.codeLens": false,
     "vim.enableNeovim": true,
-    "vim.disableAnnoyingNeovimMessage": true,
     "editor.minimap.enabled": false,
     "csharp.format.enable": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.formatOnType": false,
     "javascript.format.enable": true,
     "workbench.iconTheme": "material-icon-theme",
@@ -13,5 +12,17 @@
     "files.defaultLanguage": "markdown",
     "files.associations": {
         "*.tidal": "haskell"
+    },
+    "extensions.ignoreRecommendations": true,
+    "explorer.autoReveal": false,
+    "csharpfixformat.style.braces.onSameLine": false,
+    "csharpfixformat.style.spaces.beforeParenthesis": false,
+    "csharpfixformat.style.spaces.insideEmptyBraces": false,
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.neovimPath": "/usr/local/bin/nvim",
+    "explorer.confirmDelete": false,
+    "csharpextensions.useThisForCtorAssignments": false,
+    "TodoParser": {
+        "folderExclude": ["node_modules", ".vscode", "patternlab"]
     }
 }

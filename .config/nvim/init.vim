@@ -2,7 +2,11 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'morhetz/gruvbox'
 	Plug 'ctrlpvim/ctrlp.vim'
 	Plug 'scrooloose/nerdtree'
-        Plug 'posva/vim-vue'
+    Plug 'posva/vim-vue'
+    Plug 'pangloss/vim-javascript'
+    Plug 'mxw/vim-jsx'
+    Plug 'mileszs/ack.vim'
+    Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 set showcmd
@@ -14,14 +18,15 @@ set number
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'medium'
 set background=dark
+set termguicolors
 
 set showmatch
 
 "Indenting
 filetype indent on
 set nowrap
-set tabstop=8
-set shiftwidth=4
+set tabstop=4
+set shiftwidth=2
 set expandtab
 set smartindent
 set autoindent
