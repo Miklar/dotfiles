@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
+# Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-#brew cask install google-chrome
+brew cask install google-chrome
 brew cask install iterm2
 brew install neovim
+
+# fonts for Gruvbox vim theme
+brew tap homebrew/cask-fonts #You only need to do this once for cask-fonts
+brew cask install font-fantasque-sans-mono
+brew cask install font-fira-code
 
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
