@@ -11,3 +11,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # The installation script should set zsh to your default shell, but if it doesn't you can do it manually:
 # chsh -s $(which zsh)
+
+brew cask install visual-studio-code
