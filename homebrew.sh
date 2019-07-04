@@ -6,6 +6,10 @@
 brew cask install google-chrome
 brew cask install iterm2
 brew install neovim
+brew install z
+
+brew install nvm
+mkdir ~/.nvm
 
 # fonts for Gruvbox vim theme
 brew tap homebrew/cask-fonts #You only need to do this once for cask-fonts
