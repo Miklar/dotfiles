@@ -25,3 +25,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 brew cask install visual-studio-code
 brew cask install bettertouchtool
 brew cask install spectacle
+brew cask install spotify
