@@ -7,6 +7,7 @@ brew cask install google-chrome
 brew cask install iterm2
 brew install neovim
 brew install z
+brew install docker
 
 brew install nvm
 mkdir ~/.nvm
