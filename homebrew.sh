@@ -3,11 +3,11 @@
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew cask install google-chrome
-brew cask install iterm2
+brew install --cask google-chrome
+brew install --cask iterm2
 brew install neovim
 brew install z
-brew cask install docker
+brew install --cask docker
 
 brew install nvm
 mkdir ~/.nvm
@@ -23,8 +23,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # The installation script should set zsh to your default shell, but if it doesn't you can do it manually:
 # chsh -s $(which zsh)
 
-brew cask install visual-studio-code
-brew cask install insomnia
-brew cask install bettertouchtool
-brew cask install spectacle
-brew cask install spotify
+brew install --cask visual-studio-code
+brew install --cask insomnia
+brew install --cask bettertouchtool
+brew install --cask spotify
