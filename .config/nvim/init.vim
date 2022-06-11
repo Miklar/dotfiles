@@ -1,19 +1,4 @@
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug#begin('~/.config/nvim/plugged')
-	Plug 'morhetz/gruvbox'
-	Plug 'ctrlpvim/ctrlp.vim'
-	Plug 'scrooloose/nerdtree'
-    Plug 'posva/vim-vue'
-    Plug 'pangloss/vim-javascript'
-    Plug 'mxw/vim-jsx'
-    Plug 'mileszs/ack.vim'
-    Plug 'elixir-editors/vim-elixir'
-call plug#end()
+lua require('plugins')
 
 set showcmd
 let mapleader = ","
@@ -37,7 +22,9 @@ set expandtab
 set smartindent
 set autoindent
 
-" With help from https://statico.github.io/vim.html
+" With help from:
+" https://statico.github.io/vim.html
+" https://rudism.com/coding-csharp-in-neovim/
 
 "Search
 set incsearch
@@ -65,7 +52,28 @@ let NERDTreeDirArrows = 1
 let NERDTreeShowHidden = 1
 nmap <silent> <Leader>n :NERDTreeToggle<CR>
 
+" Omnisharp keybindings
+nnoremap('<leader>fu', 'Telescope lsp_references')
+nnoremap('<leader>gd', 'Telescope lsp_definitions')
+nnoremap('<leader>gt', 'Telescope lsp_type_definitions')
+nnoremap('<leader>gi', 'Telescope lsp_implementations')
+nnoremap('<leader>rn', 'lua vim.lsp.buf.rename()')
+nnoremap('<leader>dn', 'lua vim.lsp.diagnostic.goto_next()')
+nnoremap('<leader>dN', 'lua vim.lsp.diagnostic.goto_prev()')
+nnoremap('<leader>dd', 'Telescope lsp_document_diagnostics')
+nnoremap('<leader>dD', 'Telescope lsp_workspace_diagnostics')
+nnoremap('<leader>xx', 'Telescope lsp_code_actions')
+nnoremap('<leader>xd', '%Telescope lsp_range_code_actions')
+
+" Telescope keybinding
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
 set mouse=a
+" Puts selected text into clipboard
+vmap <LeftRelease> "*ygv
 
 " Open splits 
 set splitbelow

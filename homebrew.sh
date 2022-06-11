@@ -25,6 +25,14 @@ chsh -s /usr/local/bin/fish
 
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
+#Omnisharp
+brew tap omnisharp/omnisharp-roslyn
+brew install omnisharp-mono
+
+#Packer (Neovim plugin manager)
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
 #brew install zsh
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
