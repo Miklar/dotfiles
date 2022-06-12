@@ -24,6 +24,7 @@ mkdir ~/.nvm
 brew tap homebrew/cask-fonts #You only need to do this once for cask-fonts
 brew install --cask font-fantasque-sans-mono
 brew install --cask font-fira-code
+brew install --cask font-fira-code-nerd-font
 
 brew install fish
 # set fish as default shell
