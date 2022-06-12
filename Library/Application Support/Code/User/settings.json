@@ -24,5 +24,7 @@
     "csharpextensions.useThisForCtorAssignments": false,
     "TodoParser": {
         "folderExclude": ["node_modules", ".vscode", "patternlab"]
-    }
+    },
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true
 }
