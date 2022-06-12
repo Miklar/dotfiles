@@ -53,17 +53,17 @@ let NERDTreeShowHidden = 1
 nmap <silent> <Leader>n :NERDTreeToggle<CR>
 
 " Omnisharp keybindings
-nnoremap('<leader>fu', 'Telescope lsp_references')
-nnoremap('<leader>gd', 'Telescope lsp_definitions')
-nnoremap('<leader>gt', 'Telescope lsp_type_definitions')
-nnoremap('<leader>gi', 'Telescope lsp_implementations')
-nnoremap('<leader>rn', 'lua vim.lsp.buf.rename()')
-nnoremap('<leader>dn', 'lua vim.lsp.diagnostic.goto_next()')
-nnoremap('<leader>dN', 'lua vim.lsp.diagnostic.goto_prev()')
-nnoremap('<leader>dd', 'Telescope lsp_document_diagnostics')
-nnoremap('<leader>dD', 'Telescope lsp_workspace_diagnostics')
-nnoremap('<leader>xx', 'Telescope lsp_code_actions')
-nnoremap('<leader>xd', '%Telescope lsp_range_code_actions')
+nnoremap <leader>fu <cmd>lua require('telescope.builtin').lsp_references()<cr>
+nnoremap <leader>gd <cmd>lua require('telescope.builtin').lsp_definitions()<cr>
+nnoremap <leader>gt <cmd>lua require('telescope.builtin').lsp_type_definitions()<cr>
+nnoremap <leader>gi <cmd>lua require('telescope.builtin').lsp_implementations()<cr>
+nnoremap <leader>rn <cmd>lua vim.lsp.buf.rename()<cr>
+nnoremap <leader>dn <cmd>lua vim.lsp.diagnostic.goto_next()<cr>
+nnoremap <leader>dN <cmd>lua vim.lsp.diagnostic.prev()<cr>
+nnoremap <leader>dd <cmd>lua require('telescope.builtin').lsp_document_diagnostics()<cr>
+nnoremap <leader>dD <cmd>lua require('telescope.builtin').lsp_workspace_diagnostics()<cr>
+nnoremap <leader>xx <cmd>lua vim.lsp.buf.code_action()<cr>
+nnoremap <leader>xd <cmd>lua vim.lsp.buf.range_code_action()<cr>
 
 " Telescope keybinding
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>

@@ -13,6 +13,10 @@ return require('packer').startup(function()
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   -- autocomplete config
   local cmp = require 'cmp'
@@ -36,7 +40,14 @@ return require('packer').startup(function()
     on_attach = function(_, bufnr)
       vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
     end,
-    cmd = { "/usr/local/opt/omnisharp-roslyn/bin/omnisharp/run", "--languageserver" , "--hostPID", tostring(pid) },
+    -- cmd = { "/usr/local/opt/omnisharp-roslyn/bin/omnisharp/run", "--languageserver" , "--hostPID", tostring(pid) },
+    cmd = { "/users/miklar/.local/omnisharp/omnisharp", "--languageserver" , "--hostPID", tostring(pid) },
+    --/Users/miklar/.OMNISHARP/OMNISHARP-OSX-X64-NET6.0/oMNIsHARP
+  }
+
+  -- lualine config
+  require('lualine').setup {
+    options = { theme = 'gruvbox' }
   }
 end)
 
