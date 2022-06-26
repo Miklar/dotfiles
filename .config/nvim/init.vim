@@ -46,11 +46,19 @@ let g:ctrlp_dotfiles = 0
 let g:ctrlp_switch_buffer = 0
 nmap <silent> ; :CtrlPBuffer<CR>
 
-let NERDTreeQuitOnOpen = 0 "Dont close NerdTree when you open a file
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-let NERDTreeShowHidden = 1
-nmap <silent> <Leader>n :NERDTreeToggle<CR>
+" NvimTree
+nnoremap <C-n> :NvimTreeToggle<CR>
+nmap <silent> <Leader>n :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+" nnoremap <leader>n :NvimTreeFindFile<CR>
+" More available functions:
+" NvimTreeOpen
+" NvimTreeClose
+" NvimTreeFocus
+" NvimTreeFindFileToggle
+" NvimTreeResize
+" NvimTreeCollapse
+" NvimTreeCollapseKeepBuffers
 
 " Omnisharp keybindings
 nnoremap <leader>fu <cmd>lua require('telescope.builtin').lsp_references()<cr>

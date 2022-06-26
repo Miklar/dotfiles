@@ -1,34 +1,37 @@
 # This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
-#	name = Micke Larsson
-#	email = micke@miklar.se
-[user]
-	name = miklar
-	email = micke@miklar.se
+  name = Micke Larsson
+  email = micke@miklar.se
 [alias]
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-    chm = checkout master
-    cp = cherry-pick
-    st = status -s
-    cl = clone
-    ch = checkout
-    df = diff --word-diff
-    dc = diff --cached
-    cm = commit -m
-    cam = commit -a -m
-    ca = commit --amend
-    amend = commit --amend
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  chm = checkout master
+  swm = switch main
+  sw = switch
+  cp = cherry-pick
+  st = status -s
+  cl = clone
+  ch = checkout
+  df = diff --word-diff
+  dc = diff --cached
+  cm = commit -m
+  cam = commit -a -m
+  ca = commit --amend
+  amend = commit --amend
+  last = log -1 HEAD --stat
+  gl = config --global -l
 [color]
-    branch = auto
-    diff = auto
-    interactive = auto
-    status = auto
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+  insteadOf = https://github.com/
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
-	autocrlf = input
-	safecrlf = false
+  pager = diff-so-fancy | less --tabs=4 -RFX
+  autocrlf = input
+  safecrlf = false
+
+[help]
+	autocorrect = 20

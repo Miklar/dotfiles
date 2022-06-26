@@ -9,6 +9,7 @@ brew install neovim
 brew install z
 brew install --cask docker
 brew install diff-so-fancy #pretty git diffs
+brew install azure-cli
 
 brew install --cask visual-studio-code
 brew install --cask insomnia
