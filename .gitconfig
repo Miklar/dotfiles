@@ -35,3 +35,5 @@
 
 [help]
 	autocorrect = 20
+[pull]
+	ff = only
