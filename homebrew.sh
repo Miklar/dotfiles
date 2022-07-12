@@ -17,6 +17,7 @@ brew install --cask bettertouchtool
 brew install --cask spotify
 
 brew install todo-txt
+brew install bat
 
 brew install nvm
 mkdir ~/.nvm
