@@ -31,6 +31,8 @@ brew install --cask font-fira-code
 brew install --cask font-fira-code-nerd-font
 
 brew install fish
+fish
+fish_add_path /opt/homebrew/bin
 # set fish as default shell
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
