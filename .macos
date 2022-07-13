@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# kindly stolen from https://github.com/paulirish/dotfiles/blob/master/.osx
+# kindly stolen from https://github.com/paulirish/dotfiles/blob/main/.macos
 
 # FWIW, this `defaults find` is good at finding some set preferences.
 # e.g.    defaults find com.apple.ActivityMonitor
