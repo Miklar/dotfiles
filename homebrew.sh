@@ -5,12 +5,15 @@
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/miklar/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+brew install git
+
 brew install --cask google-chrome
 brew install --cask iterm2
 brew install neovim
 brew install z
 brew install --cask docker
-brew install diff-so-fancy #pretty git diffs
+#brew install diff-so-fancy #pretty git diffs
+brew install git-delta #pretty git diffs
 brew install azure-cli
 
 brew install --cask visual-studio-code
@@ -20,6 +23,7 @@ brew install --cask spotify
 
 brew install todo-txt
 brew install bat
+brew install exa
 
 brew install nvm
 mkdir ~/.nvm

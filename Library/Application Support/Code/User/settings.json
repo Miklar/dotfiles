@@ -27,5 +27,7 @@
     "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "terminal.external.osxExec": "iTerm2.app",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.startupEditor": "none"
 }

@@ -29,7 +29,9 @@
 [url "git@github.com:"]
   insteadOf = https://github.com/
 [core]
-  pager = diff-so-fancy | less --tabs=4 -RFX
+#  pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = delta
+
   autocrlf = input
   safecrlf = false
 
@@ -37,3 +39,20 @@
 	autocorrect = 20
 [pull]
 	ff = only
+
+[interactive]
+  diffFilter = delta --color-only
+[add.interactive]
+  useBuiltind = false
+[delta]
+  features = gruvbox-dark
+  navigate = true   # use n and N to move between diff sections
+  light = false
+  line-numbers = true
+  side-by-side = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
